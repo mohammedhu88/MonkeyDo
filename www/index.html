@@ -14,34 +14,35 @@
     <script type="text/javascript" src="./js/jquery-2.1.1.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="./js/jquery.mobile-1.4.3.js"></script>
-    <script type="text/javascript" src="js/todo.js"></script>
+    
     <script type="text/javascript" src="cordova.js"></script>
     
 </head>
 
 <body>
     <div data-role="page">
-        <div data-role="header" data-theme="b">
-            <h1>تو دو ليست</h1>
+        <div data-role="header" data-theme="a">
+            <h1>تو دو ليست 😜  </h1>
         </div><!-- /header -->
 
-        <div data-role="content" data-theme="b">
-        	<label class="item item-input" style= "background: gray">
-        		<span class="input-label">عاوز اعمل</span>
-        		<input id="taskname" placeholder="Enter Task" type="text" />
-          	</label>
-        	<button id="add"> ضيف الحاجة اللي هتعملها </button>
-        	<div id="tasklist"> 
+        <div data-role="content" data-theme="a">
+        	<div class="ui-field-contain">
+        	    <label for="text-1">عاوز تعمل ايه؟</label>
+        		<input name="text-1" data-clear-btn="true"
+        		id="taskName" value="" placeholder="إكتب هنا 📝" data-theme="a" type="text" />
         	</div>
-        	
-        	
-        	
-        	
+        	<button id="add">ضيفها لليسته 👇🏻</button>
+        	<hr>
+        	<div id="taskList"></div>
         </div><!-- /content -->
 
-        <div data-role="footer" data-position="fixed" data-theme="b">
-            <h4>Footer content</h4>
+        <div data-role="footer" data-position="fixed" data-theme="a">
+        	<a href="ab.html" id="button-1" class="ui-btn ui-btn-a" >
+        		                       developed by Mohammed Hussin
+        	</a>
         </div><!-- /footer -->
     </div><!-- /page -->
+    
+     <script type="text/javascript" src="js/todo.js"></script>
 </body>
 </html>
